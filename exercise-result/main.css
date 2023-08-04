@@ -1,0 +1,122 @@
+:root {
+	--color-primary: Blue;
+}
+
+/* --------------------------------------  PANEL */
+
+.panel {
+	--color-bg: White;
+	
+	display: grid;
+	padding: 2rem;
+	max-inline-size: 70ch; /* width */
+	background-color: var(--color-bg);
+	box-shadow: 0 0 1em rgba(0, 0, 0, 20%);
+	border-radius: 0.25em;
+}
+
+.panel__title {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-block-end: 1.75rem;
+}
+
+.panel__text {
+}
+
+.panel--highlighted {
+	--color-bg: darkseagreen;
+}
+
+/* --------------------------------------  BUTTON */
+
+.button {
+	--color-bg: white;
+	--color-text: currentcolor;
+	--color-outline: currentcolor;
+	--color-icon: var(--color-text);
+
+	font-size: 1.5em;
+	padding: 0.75em;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	display: inline-block;
+	justify-self: end;
+	margin-block-end: 1rem;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 33%);
+	border-radius: 2em;
+
+	&:hover {
+		outline: 5px solid var(--color-outline, currentcolor);
+		box-shadow: none;
+		transition: all 0.25s;
+	}
+}
+
+.button__icon {
+	border: 0.135em solid var(--color-icon, currentcolor);
+	color: var(--color-icon, currentcolor);
+	display: inline-block;
+	line-height: 1.2em;
+	inline-size: 1.5em; /* width */
+	text-align: center;
+	border-radius: 50%;
+	margin-inline-end: 0.5em;
+}
+
+.button--primary {
+	--color-text: white;
+	--color-outline: var(--color-primary);
+	--color-bg: var(--color-primary);
+}
+
+.button--large {
+	font-size: 2rem;
+}
+
+/* --------------------------------------  LINK-LIST */
+
+.link-list {
+	font-size: 1.5rem;
+}
+
+.link-list__title {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-block-end: 1.75rem;
+}
+
+.link-list__list {
+	list-style-position: inside;
+	padding-inline: 0;
+}
+
+.link-list__link:hover {
+	border-bottom: 2px solid var(--color-primary);
+	transition: all 0.5s;
+}
+
+.link-list--small {
+	font-size: 1rem;
+}
+
+/* --------------------------------------  SECTION */
+
+.section {
+	--color-bg: transparent;
+
+	padding-block: 2rem;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+}
+
+.section__content {
+	max-inline-size: max(50%, 500px);
+	margin-inline: auto;
+}
+
+.section--primary {
+	--color-bg: var(--color-primary);
+}

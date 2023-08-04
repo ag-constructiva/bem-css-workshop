@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BEM CSS FrOSCon 2023 exercise – START</title>
+        <meta name="description" content="Exercise of the BEM CSS workshop during FrOSCon 2023 conference.">
+        <style>
+            /* -------------------------------------- RESET */
+            
+            /* Box sizing rules */
+            *, *::before, *::after { box-sizing:border-box }
+            img {display: block; max-inline-size: 100%; /* max-width */}
+            
+            /* --------------------------------------  BASE */
+            
+            /* Use smooth scrolling, increase font-size */
+            html { 
+              scroll-behavior: smooth; 
+              font-size: 1.123rem
+            }
+            
+            /* Improved body font-setting */
+            body {
+                font-family: system-ui;
+                line-height: 1.6;
+                min-height: 99dvh; /* dynamic viewport height */
+                background-color: GhostWhite
+            }
+            
+            /* underline settings for styled/unstyled links */
+            a[class] { text-decoration: none; }
+            a:not([class]) { text-underline-offset: 0.15em; }
+        </style>
+        <link rel="Stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <div class="component-name">
+                <div>Our bold component title text</div>
+                <div>
+                    Some pretty awesome body text for our component.
+                    Lorem ipsum dolor amet n' stuff. And again some lorem ipsum dolor amet.
+                    Your know...
+                </div>
+            
+                <ul>
+                    <li>
+                        <a href="#">
+                            Some pretty awesome link text for our list entry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Another awesome link text for our list entry
+                        </a>
+                    </li>
+                </ul>
+            
+                <a href="#">
+                    <span>&rarr;</span>
+                    Click me
+                </a>
+            </div>  
+        </main>
+    </body>
+</html>
